@@ -10,7 +10,7 @@ if (isset($_POST['insert'])) {
 	}
 	//validate comment
 	if (empty($comment)||strlen($comment)>200||strlen($comment)<3) {
-		$error[]="Comment must be 3 to 30 charset";
+		$error[]="Comment must be 3 to 200 charset";
 	}
 
 	if (!empty($error)) {
